@@ -5,7 +5,7 @@ const app: Application = express()
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req, res) => {
+app.get('/', (req, res: any) => {
   res.send('Api working successfully')
 })
 
