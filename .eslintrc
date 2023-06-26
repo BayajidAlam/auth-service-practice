@@ -6,7 +6,11 @@
   },
   "plugins": ["@typescript-eslint"],
   // HERE
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
 
   "rules": {
     // "no-unused-vars": "error",
@@ -14,12 +18,16 @@
     // "no-console": "error",
     // "no-unsaved-vars": "error",
     // "no-unused-expressions":"error",
-    "no-unreachable":"error",
+    "no-unreachable": "error"
     // "no-undef":"error"
   },
 
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
+  },
+  "globals": {
+    "process": "readonly"
   }
 }
