@@ -1,27 +1,21 @@
-import express, {
-  Application,
-  NextFunction,
-  Request,
-  Response,
-  request,
-  response,
-} from 'express'
+import express, { Application, NextFunction, Request, Response } from 'express'
 import cors from 'cors'
-import userRoute from './app/modules/user/user.route'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
+import { UserRoutes } from './app/modules/user/user.route'
 
 const app: Application = express()
 
 // parser
 app.use(cors())
+app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Application routes
-app.use('/api/v1/users/', userRoute)
+app.use('/api/v1/users/', UserRoutes)
 
 // testing api
-app.get('/okk', (req: Request, res: Response, next: NextFunction) => {
-  throw new Error('Ora baba error')
+app.get('/', (req: Request, res: Response, next: NextFunction) => {
+  throw new Error('Test request')
 })
 
 // global error handler
