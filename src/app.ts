@@ -1,11 +1,4 @@
-import express, {
-  Application,
-  NextFunction,
-  Request,
-  Response,
-  request,
-  response,
-} from 'express'
+import express, { Application, NextFunction, Request, Response } from 'express'
 import cors from 'cors'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
 import { UserRoutes } from './app/modules/user/user.route'
@@ -22,7 +15,7 @@ app.use('/api/v1/users/', UserRoutes)
 
 // testing api
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
-  throw new Error('Ora baba error')
+  throw new Error('Test request')
 })
 
 // global error handler
