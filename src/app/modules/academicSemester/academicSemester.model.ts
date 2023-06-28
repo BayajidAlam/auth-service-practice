@@ -3,17 +3,23 @@ import {
   AcademicSemesterModel,
   IAcademicSemester,
 } from './academicSemester.interface';
-import { number } from 'zod';
+import {
+  academicSemesterCode,
+  academicSemesterMonths,
+  academicSemesterTitles,
+} from './academicSemester.constant';
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
     title: {
       type: String,
       required: true,
+      enum: academicSemesterTitles,
     },
     code: {
       type: String,
       required: true,
+      enum: academicSemesterCode,
     },
     year: {
       type: Number,
@@ -22,10 +28,12 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
     startMonth: {
       type: String,
       required: true,
+      enum: academicSemesterMonths,
     },
     endMonth: {
       type: String,
       required: true,
+      enum: academicSemesterMonths,
     },
   },
   {
