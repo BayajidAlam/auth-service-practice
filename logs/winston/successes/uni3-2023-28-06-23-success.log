@@ -382,3 +382,339 @@
   label: 'Uni3.0',
   timestamp: '2023-06-28T17:31:08.914Z'
 }
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:31:12.376Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:31:12.381Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:32:27.677Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:32:27.684Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:38:25.895Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:38:25.903Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:38:43.775Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:38:43.782Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:12.483Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:12.490Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:16.315Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:16.323Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:20.093Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:20.103Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:38.303Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:38.310Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:44.883Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:44.890Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:47.570Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:47.577Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:53.260Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:39:53.267Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:17.651Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:17.659Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:23.130Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:23.137Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:26.322Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:26.332Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:31.084Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:31.092Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:35.007Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:35.011Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:40.640Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:40.650Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:47.416Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:47.421Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:50.139Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:52:50.147Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:32.083Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:32.092Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:38.122Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:38.127Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:41.015Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:41.022Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:47.887Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:47.895Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:52.100Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:53:52.109Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:56:07.002Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:56:07.010Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:56:11.072Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:56:11.080Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:56:57.256Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:56:57.266Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:57:42.493Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-06-28T17:57:42.501Z'
+}
