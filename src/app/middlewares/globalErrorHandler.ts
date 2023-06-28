@@ -5,16 +5,16 @@ import handleCastError from '../../errors/handleCastError';
 import handleValidationError from '../../errors/handleValidationError';
 import handleZodError from '../../errors/handleZodError';
 import { IGenericErrorMessage } from '../../interfaces/error';
-import { errorLogger } from '../../shared/logger';
 import { ErrorRequestHandler } from 'express';
+import { errorLogger } from '../../shared/logger';
 
 // global error handler
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   // eslint-disable-next-line no-unused-expressions
-  // config.env == 'development'
-  //   ? // eslint-disable-next-line no-console
-  //     console.log(`Global error handler`, error)
-  //   : errorLogger.error(`Global error handler`, error);
+  config.env == 'development'
+    ? // eslint-disable-next-line no-console
+      console.log(`Global error handler`, error)
+    : errorLogger.error(`Global error handler`, error);
 
   let statusCode = 500;
   let message = 'Something went wrong';
@@ -29,9 +29,6 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
 
   // handle zod error
   else if (error instanceof ZodError) {
-    console.log('===================ZodError=================');
-    console.log({ error });
-    console.log('====================================');
     const simplifiedError = handleZodError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
