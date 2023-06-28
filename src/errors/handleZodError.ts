@@ -9,6 +9,7 @@ const handleZodError = (error: ZodError): IGenericErrorResponse => {
       message: issue?.message,
     };
   });
+  console.log(errors, 'This is errors log');
 
   const statusCode = 400;
 
