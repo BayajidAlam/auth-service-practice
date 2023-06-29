@@ -69,6 +69,26 @@
             "date": 1687978975187,
             "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-29-06-01-error.log",
             "hash": "2faca9e16196d4bc5a887adbbac68b7f6826f6802c79b215d78217630f79bb15"
+        },
+        {
+            "date": 1688047521839,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-29-06-20-error.log",
+            "hash": "18eee5f8d8887f1e87e4dcb4aa1a0bcd34eaee0cdeddac8bf991b9a172047364"
+        },
+        {
+            "date": 1688053265957,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-29-06-21-error.log",
+            "hash": "3436d5b58e5fec5434a7f4338116ebc07f4200de9a6bb21c840bbc12b2cb6477"
+        },
+        {
+            "date": 1688057612626,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-29-06-22-error.log",
+            "hash": "7d6281393d52776787b580383f0d35180085ef0ed4c4e3f7aa27b5eed43e0a56"
+        },
+        {
+            "date": 1688058009924,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-29-06-23-error.log",
+            "hash": "7d1ac6d037e40fc73f898b4d7f57b1b94a5b5f6cf00642c0e9f6b7e7f57b02c2"
         }
     ],
     "hashType": "sha256"
