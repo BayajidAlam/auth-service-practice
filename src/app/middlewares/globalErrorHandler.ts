@@ -20,6 +20,7 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   let message = 'Something went wrong';
   let errorMessage: IGenericErrorMessage[] = [];
 
+  // validation error
   if (error?.name === 'ValidatorError') {
     const simplifiedError = handleValidationError(error);
     statusCode = simplifiedError.statusCode;
