@@ -2,155 +2,119 @@
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:12:23.698Z'
+  timestamp: '2023-06-30T14:03:35.927Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:12:23.716Z'
+  timestamp: '2023-06-30T14:03:35.936Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:12:40.459Z'
+  timestamp: '2023-06-30T14:08:37.456Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:12:40.469Z'
+  timestamp: '2023-06-30T14:08:37.464Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:12:57.823Z'
+  timestamp: '2023-06-30T14:10:01.863Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:12:57.830Z'
+  timestamp: '2023-06-30T14:10:01.867Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:13:06.550Z'
+  timestamp: '2023-06-30T14:10:05.433Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:13:06.556Z'
+  timestamp: '2023-06-30T14:10:05.440Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:13:35.628Z'
+  timestamp: '2023-06-30T14:10:08.815Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:13:35.635Z'
+  timestamp: '2023-06-30T14:10:08.820Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:13:54.922Z'
+  timestamp: '2023-06-30T14:10:16.110Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:13:54.930Z'
+  timestamp: '2023-06-30T14:10:16.115Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:00.079Z'
+  timestamp: '2023-06-30T14:10:18.538Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:00.086Z'
+  timestamp: '2023-06-30T14:10:18.546Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:06.789Z'
+  timestamp: '2023-06-30T14:10:21.537Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:06.797Z'
+  timestamp: '2023-06-30T14:10:21.544Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:12.650Z'
+  timestamp: '2023-06-30T14:10:50.079Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:12.655Z'
+  timestamp: '2023-06-30T14:10:50.086Z'
 }
 {
   message: 'db connected successfully',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:33.966Z'
+  timestamp: '2023-06-30T14:11:05.944Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:33.975Z'
-}
-{
-  message: 'db connected successfully',
-  level: 'info',
-  label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:39.974Z'
-}
-{
-  message: 'Application listening on port 5000',
-  level: 'info',
-  label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:39.982Z'
-}
-{
-  message: 'db connected successfully',
-  level: 'info',
-  label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:45.327Z'
-}
-{
-  message: 'Application listening on port 5000',
-  level: 'info',
-  label: 'Uni3.0',
-  timestamp: '2023-06-30T08:14:45.334Z'
-}
-{
-  message: 'db connected successfully',
-  level: 'info',
-  label: 'Uni3.0',
-  timestamp: '2023-06-30T08:16:34.552Z'
-}
-{
-  message: 'Application listening on port 5000',
-  level: 'info',
-  label: 'Uni3.0',
-  timestamp: '2023-06-30T08:16:34.557Z'
+  timestamp: '2023-06-30T14:11:05.952Z'
 }
