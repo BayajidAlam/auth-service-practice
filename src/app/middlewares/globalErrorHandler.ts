@@ -9,7 +9,7 @@ import { ErrorRequestHandler } from 'express';
 import { errorLogger } from '../../shared/logger';
 
 // global error handler
-const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
+const globalErrorHandler: ErrorRequestHandler = (error, req, res) => {
   // eslint-disable-next-line no-unused-expressions
   config.env == 'development'
     ? // eslint-disable-next-line no-console
@@ -74,8 +74,6 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     errorMessage,
     stack: config.env !== 'production' ? error?.stack : undefined,
   });
-
-  next();
 };
 
 export default globalErrorHandler;
