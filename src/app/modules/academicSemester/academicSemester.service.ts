@@ -3,7 +3,10 @@ import ApiError from '../../../errors/ApiError';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
-import { academicSemesterCodeMapper } from './academicSemester.constant';
+import {
+  academicSemesterCodeMapper,
+  academicSemesterSearchableField,
+} from './academicSemester.constant';
 import {
   IAcademicSemester,
   IAcademicSemesterFilters,
@@ -26,10 +29,11 @@ const getAllSemesters = async (
   filters: IAcademicSemesterFilters,
   paginationOptions: IPaginationOptions
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  const { searchTerm } = filters;
+  const { searchTerm, ...filtersData } = filters;
 
-  const academicSemesterSearchableField = ['title', 'code', 'year'];
   const andCondition = [];
+
+  // dynamic searching
   if (searchTerm) {
     andCondition.push({
       $or: academicSemesterSearchableField.map(field => ({
@@ -37,6 +41,15 @@ const getAllSemesters = async (
           $regex: searchTerm,
           $options: 'i',
         },
+      })),
+    });
+  }
+
+  // dynamic filtering
+  if (Object.keys(filtersData).length) {
+    andCondition.push({
+      $and: Object.entries(filtersData).map(([field, value]) => ({
+        [field]: value,
       })),
     });
   }
@@ -50,7 +63,9 @@ const getAllSemesters = async (
     sortConditions[sortBy] = sortOrder;
   }
 
-  const result = await AcademicSemester.find({ $and: andCondition })
+  const whereCondition = andCondition.length > 0 ? { $and: andCondition } : {};
+
+  const result = await AcademicSemester.find(whereCondition)
     .sort(sortConditions)
     .skip(skip)
     .limit(limit);
@@ -67,7 +82,15 @@ const getAllSemesters = async (
   };
 };
 
+const getSingleSemester = async (
+  id: string
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findById(id);
+  return result;
+};
+
 export const AcademicSemesterService = {
   createSemester,
   getAllSemesters,
+  getSingleSemester,
 };
