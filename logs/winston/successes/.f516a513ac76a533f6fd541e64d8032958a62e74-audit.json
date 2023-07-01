@@ -144,6 +144,16 @@
             "date": 1688153976868,
             "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-01-success.log",
             "hash": "11b0e10412f2fb841620537c9044e2eb1c3aedb84a0a62f99d43ac751284840c"
+        },
+        {
+            "date": 1688155219974,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-02-success.log",
+            "hash": "fefa878ef4d0214c2243e01d446e07eadca64e689d8fc335c47239448af7e1cd"
+        },
+        {
+            "date": 1688188883220,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-11-success.log",
+            "hash": "7f3d323df42c9bbd5f533e8516bf96a2865d3d9901c48b54be17e4ca74c01227"
         }
     ],
     "hashType": "sha256"
