@@ -166,3 +166,27 @@
   label: 'Uni3.0',
   timestamp: '2023-07-01T05:57:33.014Z'
 }
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-07-01T05:58:06.659Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-07-01T05:58:06.664Z'
+}
+{
+  message: 'db connected successfully',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-07-01T05:58:29.113Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Uni3.0',
+  timestamp: '2023-07-01T05:58:29.121Z'
+}
