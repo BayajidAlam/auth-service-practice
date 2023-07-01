@@ -1,8 +1,8 @@
 import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
 import { User } from './user.model';
 
-export const findLastUserId = async () => {
-  const lastUser = await User.findOne(
+export const findLastStudentId = async () => {
+  const lastStudent = await User.findOne(
     {},
     {
       id: 1,
@@ -14,16 +14,21 @@ export const findLastUserId = async () => {
     })
     .lean();
 
-  return lastUser?.id;
+  return lastStudent?.id;
 };
 
 export const generateStudentId = async (
   academicSemester: IAcademicSemester
-) => {
-  const currentId = (await findLastUserId()) || (0).toString().padStart(5, '0'); //00001/00000
+): Promise<string> => {
+  const currentId =
+    (await findLastStudentId()) || (0).toString().padStart(5, '0'); //00001/00000
 
   // increment by 1
-  const incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
+  let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
+
+  incrementedId = `${academicSemester.year.substring(2)}${
+    academicSemester.code
+  }${incrementedId}`;
 
   return incrementedId;
 };
