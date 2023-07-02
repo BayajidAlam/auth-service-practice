@@ -1,18 +1,18 @@
 import validateRequest from '../../middlewares/validateRequest';
 import router from '../../routes';
-import { UserController } from '../user/user.controller';
-import { UserValidation } from '../user/user.validation';
+import { StudentController } from './student.controller';
+import { StudentValidation } from './student.validation';
 
-// router.patch(
-//   '/create-student',
-//   validateRequest(UserValidation.createUserZodSchema),
-//   UserController.createStudent
-// );
+router.get('/:id', StudentController.getSingleStudent);
 
-router.get('/:id', SutdentController.getSingleStudent);
+router.get('/', StudentController.getAllStudents);
 
-router.get('/', SutdentController.getAllStudents);
+router.delete('/:id', StudentController.deleteStudent);
 
-router.delete('/:id', SutdentController.deleteStudent);
+router.patch(
+  '/:id',
+  validateRequest(StudentValidation.updateStudentZodSchema),
+  StudentController.updateStudent
+);
 
 export const StudentRoutes = router;

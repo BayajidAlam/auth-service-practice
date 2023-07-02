@@ -1,5 +1,4 @@
-import { InferSchemaType, Model, Types } from 'mongoose';
-import { StudentSchema } from './student.model';
+import { Model, Types } from 'mongoose';
 import { IAcademicDepartment } from '../academicDepartment/academicDepartment.interface';
 import { IAcademicFaculty } from '../academicFaculty/academicFaculty.interface';
 import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
@@ -47,3 +46,12 @@ export type IStudent = {
 };
 
 export type StudentModel = Model<IStudent, Record<string, unknown>>;
+
+export type IStudentFilters = {
+  searchTerm?: string;
+  id?: string;
+  bloodGroup?: string;
+  email?: string;
+  contactNo?: string;
+  emergencyContactNo?: string;
+};

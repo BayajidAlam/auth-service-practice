@@ -6,6 +6,7 @@ import pick from '../../../shared/pick';
 import { paginationFields } from '../../../constants/pagination';
 import { IStudent } from './student.interface';
 import { studentFilterableFields } from './student.constant';
+import { StudentService } from './student.service';
 
 const getAllStudents = catchAsync(async (req: Request, res: Response) => {
   const filters = pick(req.query, studentFilterableFields);
@@ -37,11 +38,11 @@ const getSingleStudent = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-const updateSemester = catchAsync(async (req: Request, res: Response) => {
+const updateStudent = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
   const updatedData = req.body;
 
-  const result = await StudentService.updateSemester(id, updatedData);
+  const result = await StudentService.updateStudent(id, updatedData);
 
   sendResponse<IStudent>(res, {
     statusCode: httpStatus.OK,
@@ -63,9 +64,9 @@ const deleteStudent = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-export const AcademicSemesterController = {
+export const StudentController = {
   getAllStudents,
   getSingleStudent,
-  updateSemester,
+  updateStudent,
   deleteStudent,
 };
