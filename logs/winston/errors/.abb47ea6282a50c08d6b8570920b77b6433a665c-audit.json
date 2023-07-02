@@ -154,6 +154,56 @@
             "date": 1688188883224,
             "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-01-07-11-error.log",
             "hash": "f5750cf73d6468cb590877f92df0365701d82d938554303d229934b80c357b2e"
+        },
+        {
+            "date": 1688193459716,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-01-07-12-error.log",
+            "hash": "6912a35c80354bd60e1387fa52646a29d1db443b3c3a0c3ff5f044f67c0fd527"
+        },
+        {
+            "date": 1688194805598,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-01-07-13-error.log",
+            "hash": "e9cd142cd07c844e5b1045203a5457b53e434a1e6e502dbac4e07ec3a60c2ee6"
+        },
+        {
+            "date": 1688217434585,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-01-07-19-error.log",
+            "hash": "c1c5b0d271ab834d3473ec05018edabec9250de28892f16145269cea6442eaed"
+        },
+        {
+            "date": 1688222570208,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-01-07-20-error.log",
+            "hash": "ca688a78020fdf9ece725c9e677f6c3cda01707b3d26b1eeb146506104ab787b"
+        },
+        {
+            "date": 1688223717191,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-01-07-21-error.log",
+            "hash": "8127bcf08010508980044f862ef97333cb3e4bcbe965a5e81ddfe1dd1fa10218"
+        },
+        {
+            "date": 1688231857110,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-01-07-23-error.log",
+            "hash": "407906080c487e26d8c8ec6a238356957886eeaafb37bcb570201dbd62f02ce3"
+        },
+        {
+            "date": 1688242171078,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-02-07-02-error.log",
+            "hash": "0afdd22d9db01ebb9e567d0ea1a1409561748e13b067f5e20a70d0095d85f676"
+        },
+        {
+            "date": 1688271492149,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-02-07-10-error.log",
+            "hash": "8963f68b34f362b660f2160398ac9630644d889bc2022496f38ba007dc10c929"
+        },
+        {
+            "date": 1688274318013,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-02-07-11-error.log",
+            "hash": "2dc3da59c9d9907e279addba1f2d60c32c36c8d6313312dc757fec17ef0d8eea"
+        },
+        {
+            "date": 1688282026761,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-02-07-13-error.log",
+            "hash": "26742096a19d1d7060ba17d3c7890c74079cba5f530f00504ccfb64e2ee11bf0"
         }
     ],
     "hashType": "sha256"

@@ -3,6 +3,10 @@ import cors from 'cors';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import router from './app/routes';
 import httpStatus from 'http-status';
+import {
+  generateStudentId,
+  generateFacultyId,
+} from './app/modules/user/user.utils';
 
 const app: Application = express();
 
@@ -38,3 +42,10 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 });
 
 export default app;
+
+const studentId = async () => {
+  const testId = await generateFacultyId();
+  console.log(testId);
+};
+
+studentId();
