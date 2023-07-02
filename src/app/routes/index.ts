@@ -28,6 +28,10 @@ const moduleRoutes = [
     path: '/students',
     route: StudentRoutes,
   },
+  {
+    path: '/faculties',
+    route: FacultyRoutes,
+  },
 ];
 
 moduleRoutes.forEach(route => router.use(route.path, route.route));
