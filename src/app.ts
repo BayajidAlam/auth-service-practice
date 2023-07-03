@@ -3,10 +3,6 @@ import cors from 'cors';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import router from './app/routes';
 import httpStatus from 'http-status';
-import {
-  generateStudentId,
-  generateFacultyId,
-} from './app/modules/user/user.utils';
 
 const app: Application = express();
 
@@ -19,9 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1/', router);
 
 // testing api
-app.get('/', (req: Request, res: Response, next: NextFunction) => {
-  throw new Error('Test request');
-});
+// app.get('/', (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('Test request');
+// });
 
 // global error handler
 app.use(globalErrorHandler);
