@@ -15,9 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1/', router);
 
 // testing api
-app.get('/', (req: Request, res: Response, next: NextFunction) => {
-  throw new Error('Test request');
-});
+// app.get('/', (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('Test request');
+// });
 
 // global error handler
 app.use(globalErrorHandler);

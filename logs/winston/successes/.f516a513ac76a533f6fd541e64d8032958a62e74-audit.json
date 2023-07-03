@@ -1,225 +1,240 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "E:\\auth-service-3\\logs\\winston\\successes\\.f516a513ac76a533f6fd541e64d8032958a62e74-audit.json",
-  "files": [
-    {
-      "date": 1687850686840,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-27-06-13-success.log",
-      "hash": "207c5545d0f12ebc9b4d6ac9cd9dbacdcd6c67a1e970d464d6f4212294d01feb"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1687890496174,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-00-success.log",
-      "hash": "cbc92a55925a9f8477f5f5ad013e08990cf8d01afe9a46cfc884f91d733de969"
-    },
-    {
-      "date": 1687892402728,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-01-success.log",
-      "hash": "56d5cd6c8265933f6eb441481cc1ef42a3bfa243c9472a3e9a8bd1d9da5bc85f"
-    },
-    {
-      "date": 1687896209596,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-02-success.log",
-      "hash": "4d2fe54a85069975c05895d7cbc4e8972e38884931ac4227b3451d717886a82b"
-    },
-    {
-      "date": 1687899709148,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-03-success.log",
-      "hash": "7e53414f40753b97b1e57400f1e4fc3e19cdc66168bc40080a5b9781ae8aaec6"
-    },
-    {
-      "date": 1687926489056,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-10-success.log",
-      "hash": "83b7a9bb5558c2b89b1a45aac64eaae7b5df1fa20df19c52ce7f14ba9199bac3"
-    },
-    {
-      "date": 1687931573267,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-11-success.log",
-      "hash": "55e9b3a5ece90a9740e12b03103d70651dfe37a0d136b6be0eddd4df36e7e15c"
-    },
-    {
-      "date": 1687932005086,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-12-success.log",
-      "hash": "de98e02377e5dbb21260b947d7f45de8935395b8944c47c8327a8d40f76a4872"
-    },
-    {
-      "date": 1687935647626,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-13-success.log",
-      "hash": "6ede93e6b6f88435d60a19e9abde4f03bedbaaf3a192accf916d87d8ec6cec8b"
-    },
-    {
-      "date": 1687970261201,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-22-success.log",
-      "hash": "d9dfe8faddcef93fb0e695f6122f04c5d3bc2653309e38d40e86295df6127462"
-    },
-    {
-      "date": 1687972701577,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-23-success.log",
-      "hash": "e13a98f58651576f55fab5704d6473239a55281832d430764785c424132e1ed1"
-    },
-    {
-      "date": 1687975206180,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-00-success.log",
-      "hash": "32bb8ffc991f4807e6c406bfd85c7e3304e314198a03f4dccd7f36939dd471df"
-    },
-    {
-      "date": 1687978975184,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-01-success.log",
-      "hash": "ab0fbe52056954390295a58042c460de87fcc5709ee2c0448911d41145b40784"
-    },
-    {
-      "date": 1688047521833,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-20-success.log",
-      "hash": "2e777b08a6027271c403d9aec385911765e6cb252c0119214ce7ed11709f250f"
-    },
-    {
-      "date": 1688053265954,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-21-success.log",
-      "hash": "12c62087d662674f79ff91237897cdf983dc0ffaee8ad256c391510939b0f7b6"
-    },
-    {
-      "date": 1688057612623,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-22-success.log",
-      "hash": "49b2fec1220a73d430319a00c68e7ec956af972f2a4523a2ecad04d3eb833227"
-    },
-    {
-      "date": 1688058009921,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-23-success.log",
-      "hash": "9af4f99608a8fa0befd95b3c882a9ca523fc0425964990eef084fb61b1026fbb"
-    },
-    {
-      "date": 1688061627280,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-00-success.log",
-      "hash": "477b81a5d26c365e40d463aeef18a266d830262fca32c33d0bf9d88a98486e01"
-    },
-    {
-      "date": 1688100475189,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-10-success.log",
-      "hash": "f6001ee37589b7b30f3bdc9d271ce5c656719ced8cfa4869e918998b57e13ffb"
-    },
-    {
-      "date": 1688101268298,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-11-success.log",
-      "hash": "02582b42e9a491e524f6187a3f23fb954deac344e90eef5b51eb68efc03002b4"
-    },
-    {
-      "date": 1688104819462,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-12-success.log",
-      "hash": "391e63063fb4c6898239a605e434e81d5b9558a65b517908abddbc1f813df4f2"
-    },
-    {
-      "date": 1688108404750,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-13-success.log",
-      "hash": "ce3c4dfec215a9ea829d8b9308cb3226831191ce5547cc98d561377b0a930727"
-    },
-    {
-      "date": 1688112739542,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-14-success.log",
-      "hash": "1d9649a6b743a71d2219af3ec9dd422e0abac8db463f66d2fa427952399dae2c"
-    },
-    {
-      "date": 1688123111432,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-17-success.log",
-      "hash": "0b010bbbd655adaacf222d94aa57cac49958644c482826b46ad62c44110f5c22"
-    },
-    {
-      "date": 1688126496362,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-18-success.log",
-      "hash": "5b133680c4532338dc55da46e4945ab222df5006daed91fa46a1db4608ada605"
-    },
-    {
-      "date": 1688133813316,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-20-success.log",
-      "hash": "aa88015f0b21c584c7e8d225910ed5d903ae074a79d36d3a6baf9385151f604b"
-    },
-    {
-      "date": 1688148928931,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-00-success.log",
-      "hash": "373bb2ea0fd0251b681df1c32de0938873d4988f581964d5b3a95f48f3bf137d"
-    },
-    {
-      "date": 1688153976868,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-01-success.log",
-      "hash": "11b0e10412f2fb841620537c9044e2eb1c3aedb84a0a62f99d43ac751284840c"
-    },
-    {
-      "date": 1688155219974,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-02-success.log",
-      "hash": "fefa878ef4d0214c2243e01d446e07eadca64e689d8fc335c47239448af7e1cd"
-    },
-    {
-      "date": 1688188883220,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-11-success.log",
-      "hash": "7f3d323df42c9bbd5f533e8516bf96a2865d3d9901c48b54be17e4ca74c01227"
-    },
-    {
-      "date": 1688193459714,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-12-success.log",
-      "hash": "1fa132f9a90f30fe9c9af938c99ed33ef2811e31ce523d30b3e98f738331ff7e"
-    },
-    {
-      "date": 1688194803298,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-13-success.log",
-      "hash": "2322e418935de3155fdaafbd440177ca192da96c7ba00584cf3896f14ad79cec"
-    },
-    {
-      "date": 1688217434581,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-19-success.log",
-      "hash": "6721815ef3dde48f9a3d10efdf70c5c503237dd45803d0b552acfb7e8a019ec3"
-    },
-    {
-      "date": 1688222570205,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-20-success.log",
-      "hash": "1935298e43178cb5381795a31d442d5bc21f1d10d7a24b7bb35fedbf9bc36657"
-    },
-    {
-      "date": 1688223717189,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-21-success.log",
-      "hash": "7bd655b0c48d25e51e39650b3bae2cc687defc85f821632b79d50df3634d55dd"
-    },
-    {
-      "date": 1688231857108,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-23-success.log",
-      "hash": "991a90061bef212c0c8d8665bc27f9e98540ad5fb8b626ad7a0b8c2aee02c10b"
-    },
-    {
-      "date": 1688242171076,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-02-success.log",
-      "hash": "ab234c5a294c94f5c2c4f7ac7d95d9672a39f6194ec6d353416dd266f716d9ac"
-    },
-    {
-      "date": 1688271492145,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-10-success.log",
-      "hash": "d12192a9fe5638500b901899ac9a82bcfdf3540ce7a08c27848f3b600c9f7a97"
-    },
-    {
-      "date": 1688274318009,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-11-success.log",
-      "hash": "e3d60de53e7643e8f8774e3648105912ac59a5fbae43ea0f8e7ccfbbe4ea205f"
-    },
-    {
-      "date": 1688282026758,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-13-success.log",
-      "hash": "b783431b7b7ad8cccc548dd3af26e30521716303849cb3c2fc41b2f74a556cb5"
-    },
-    {
-      "date": 1688284874959,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-14-success.log",
-      "hash": "ca81537dd248338449fe4357c9a583fe83ca1c09b850793576c6822e56a9daad"
-    },
-    {
-      "date": 1688292448037,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-16-success.log",
-      "hash": "f5bbecb04fd76ad7c1521afef1a52306bd5f629ec4a036d46bee7a37921a17ee"
-    },
-    {
-      "date": 1688322108627,
-      "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-03-07-00-success.log",
-      "hash": "09009de54d29f67c5f384e6842519eb2cc158b004e50d67493af00d5b9afe490"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "E:\\auth-service-3\\logs\\winston\\successes\\.f516a513ac76a533f6fd541e64d8032958a62e74-audit.json",
+    "files": [
+        {
+            "date": 1687850686840,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-27-06-13-success.log",
+            "hash": "207c5545d0f12ebc9b4d6ac9cd9dbacdcd6c67a1e970d464d6f4212294d01feb"
+        },
+        {
+            "date": 1687890496174,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-00-success.log",
+            "hash": "cbc92a55925a9f8477f5f5ad013e08990cf8d01afe9a46cfc884f91d733de969"
+        },
+        {
+            "date": 1687892402728,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-01-success.log",
+            "hash": "56d5cd6c8265933f6eb441481cc1ef42a3bfa243c9472a3e9a8bd1d9da5bc85f"
+        },
+        {
+            "date": 1687896209596,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-02-success.log",
+            "hash": "4d2fe54a85069975c05895d7cbc4e8972e38884931ac4227b3451d717886a82b"
+        },
+        {
+            "date": 1687899709148,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-03-success.log",
+            "hash": "7e53414f40753b97b1e57400f1e4fc3e19cdc66168bc40080a5b9781ae8aaec6"
+        },
+        {
+            "date": 1687926489056,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-10-success.log",
+            "hash": "83b7a9bb5558c2b89b1a45aac64eaae7b5df1fa20df19c52ce7f14ba9199bac3"
+        },
+        {
+            "date": 1687931573267,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-11-success.log",
+            "hash": "55e9b3a5ece90a9740e12b03103d70651dfe37a0d136b6be0eddd4df36e7e15c"
+        },
+        {
+            "date": 1687932005086,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-12-success.log",
+            "hash": "de98e02377e5dbb21260b947d7f45de8935395b8944c47c8327a8d40f76a4872"
+        },
+        {
+            "date": 1687935647626,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-13-success.log",
+            "hash": "6ede93e6b6f88435d60a19e9abde4f03bedbaaf3a192accf916d87d8ec6cec8b"
+        },
+        {
+            "date": 1687970261201,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-22-success.log",
+            "hash": "d9dfe8faddcef93fb0e695f6122f04c5d3bc2653309e38d40e86295df6127462"
+        },
+        {
+            "date": 1687972701577,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-23-success.log",
+            "hash": "e13a98f58651576f55fab5704d6473239a55281832d430764785c424132e1ed1"
+        },
+        {
+            "date": 1687975206180,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-00-success.log",
+            "hash": "32bb8ffc991f4807e6c406bfd85c7e3304e314198a03f4dccd7f36939dd471df"
+        },
+        {
+            "date": 1687978975184,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-01-success.log",
+            "hash": "ab0fbe52056954390295a58042c460de87fcc5709ee2c0448911d41145b40784"
+        },
+        {
+            "date": 1688047521833,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-20-success.log",
+            "hash": "2e777b08a6027271c403d9aec385911765e6cb252c0119214ce7ed11709f250f"
+        },
+        {
+            "date": 1688053265954,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-21-success.log",
+            "hash": "12c62087d662674f79ff91237897cdf983dc0ffaee8ad256c391510939b0f7b6"
+        },
+        {
+            "date": 1688057612623,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-22-success.log",
+            "hash": "49b2fec1220a73d430319a00c68e7ec956af972f2a4523a2ecad04d3eb833227"
+        },
+        {
+            "date": 1688058009921,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-23-success.log",
+            "hash": "9af4f99608a8fa0befd95b3c882a9ca523fc0425964990eef084fb61b1026fbb"
+        },
+        {
+            "date": 1688061627280,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-00-success.log",
+            "hash": "477b81a5d26c365e40d463aeef18a266d830262fca32c33d0bf9d88a98486e01"
+        },
+        {
+            "date": 1688100475189,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-10-success.log",
+            "hash": "f6001ee37589b7b30f3bdc9d271ce5c656719ced8cfa4869e918998b57e13ffb"
+        },
+        {
+            "date": 1688101268298,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-11-success.log",
+            "hash": "02582b42e9a491e524f6187a3f23fb954deac344e90eef5b51eb68efc03002b4"
+        },
+        {
+            "date": 1688104819462,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-12-success.log",
+            "hash": "391e63063fb4c6898239a605e434e81d5b9558a65b517908abddbc1f813df4f2"
+        },
+        {
+            "date": 1688108404750,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-13-success.log",
+            "hash": "ce3c4dfec215a9ea829d8b9308cb3226831191ce5547cc98d561377b0a930727"
+        },
+        {
+            "date": 1688112739542,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-14-success.log",
+            "hash": "1d9649a6b743a71d2219af3ec9dd422e0abac8db463f66d2fa427952399dae2c"
+        },
+        {
+            "date": 1688123111432,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-17-success.log",
+            "hash": "0b010bbbd655adaacf222d94aa57cac49958644c482826b46ad62c44110f5c22"
+        },
+        {
+            "date": 1688126496362,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-18-success.log",
+            "hash": "5b133680c4532338dc55da46e4945ab222df5006daed91fa46a1db4608ada605"
+        },
+        {
+            "date": 1688133813316,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-30-06-20-success.log",
+            "hash": "aa88015f0b21c584c7e8d225910ed5d903ae074a79d36d3a6baf9385151f604b"
+        },
+        {
+            "date": 1688148928931,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-00-success.log",
+            "hash": "373bb2ea0fd0251b681df1c32de0938873d4988f581964d5b3a95f48f3bf137d"
+        },
+        {
+            "date": 1688153976868,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-01-success.log",
+            "hash": "11b0e10412f2fb841620537c9044e2eb1c3aedb84a0a62f99d43ac751284840c"
+        },
+        {
+            "date": 1688155219974,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-02-success.log",
+            "hash": "fefa878ef4d0214c2243e01d446e07eadca64e689d8fc335c47239448af7e1cd"
+        },
+        {
+            "date": 1688188883220,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-11-success.log",
+            "hash": "7f3d323df42c9bbd5f533e8516bf96a2865d3d9901c48b54be17e4ca74c01227"
+        },
+        {
+            "date": 1688193459714,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-12-success.log",
+            "hash": "1fa132f9a90f30fe9c9af938c99ed33ef2811e31ce523d30b3e98f738331ff7e"
+        },
+        {
+            "date": 1688194803298,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-13-success.log",
+            "hash": "2322e418935de3155fdaafbd440177ca192da96c7ba00584cf3896f14ad79cec"
+        },
+        {
+            "date": 1688217434581,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-19-success.log",
+            "hash": "6721815ef3dde48f9a3d10efdf70c5c503237dd45803d0b552acfb7e8a019ec3"
+        },
+        {
+            "date": 1688222570205,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-20-success.log",
+            "hash": "1935298e43178cb5381795a31d442d5bc21f1d10d7a24b7bb35fedbf9bc36657"
+        },
+        {
+            "date": 1688223717189,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-21-success.log",
+            "hash": "7bd655b0c48d25e51e39650b3bae2cc687defc85f821632b79d50df3634d55dd"
+        },
+        {
+            "date": 1688231857108,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-01-07-23-success.log",
+            "hash": "991a90061bef212c0c8d8665bc27f9e98540ad5fb8b626ad7a0b8c2aee02c10b"
+        },
+        {
+            "date": 1688242171076,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-02-success.log",
+            "hash": "ab234c5a294c94f5c2c4f7ac7d95d9672a39f6194ec6d353416dd266f716d9ac"
+        },
+        {
+            "date": 1688271492145,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-10-success.log",
+            "hash": "d12192a9fe5638500b901899ac9a82bcfdf3540ce7a08c27848f3b600c9f7a97"
+        },
+        {
+            "date": 1688274318009,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-11-success.log",
+            "hash": "e3d60de53e7643e8f8774e3648105912ac59a5fbae43ea0f8e7ccfbbe4ea205f"
+        },
+        {
+            "date": 1688282026758,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-13-success.log",
+            "hash": "b783431b7b7ad8cccc548dd3af26e30521716303849cb3c2fc41b2f74a556cb5"
+        },
+        {
+            "date": 1688284874959,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-14-success.log",
+            "hash": "ca81537dd248338449fe4357c9a583fe83ca1c09b850793576c6822e56a9daad"
+        },
+        {
+            "date": 1688292448037,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-02-07-16-success.log",
+            "hash": "f5bbecb04fd76ad7c1521afef1a52306bd5f629ec4a036d46bee7a37921a17ee"
+        },
+        {
+            "date": 1688322108627,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-03-07-00-success.log",
+            "hash": "09009de54d29f67c5f384e6842519eb2cc158b004e50d67493af00d5b9afe490"
+        },
+        {
+            "date": 1688324436189,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-03-07-01-success.log",
+            "hash": "7c7290b754a6bc8f5388ee0898e21aa12510d710724dcf765d1226c27768e6bb"
+        },
+        {
+            "date": 1688359489626,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-03-07-10-success.log",
+            "hash": "5ea90b6c9def2beb8da28d1d0a704de50d6547cc6afed3c9cb9c47d89444e06a"
+        },
+        {
+            "date": 1688360504126,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-03-07-11-success.log",
+            "hash": "1f77f0f19e9cd5a35aa4921db2f5e43ffa21305327f3c08bde6b7d5c2e09a09d"
+        }
+    ],
+    "hashType": "sha256"
 }
