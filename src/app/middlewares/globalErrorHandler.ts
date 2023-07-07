@@ -5,11 +5,16 @@ import handleCastError from '../../errors/handleCastError';
 import handleValidationError from '../../errors/handleValidationError';
 import handleZodError from '../../errors/handleZodError';
 import { IGenericErrorMessage } from '../../interfaces/error';
-import { ErrorRequestHandler, Response } from 'express';
+import { ErrorRequestHandler, NextFunction, Response } from 'express';
 import { errorLogger } from '../../shared/logger';
 
 // global error handler
-const globalErrorHandler: ErrorRequestHandler = (error, req, res: Response) => {
+const globalErrorHandler: ErrorRequestHandler = (
+  error,
+  req,
+  res: Response,
+  next: NextFunction
+) => {
   // eslint-disable-next-line no-unused-expressions
   config.env == 'development'
     ? // eslint-disable-next-line no-console
