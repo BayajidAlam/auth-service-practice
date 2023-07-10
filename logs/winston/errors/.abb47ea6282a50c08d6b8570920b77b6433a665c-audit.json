@@ -299,6 +299,11 @@
             "date": 1688996151202,
             "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-10-07-19-error.log",
             "hash": "5759086469e2a013e3cb00d5ebc1bf379fa7d200b41e224ba4b201a5a1c188e4"
+        },
+        {
+            "date": 1688997620250,
+            "name": "E:\\auth-service-3\\logs\\winston\\errors\\uni3-2023-10-07-20-error.log",
+            "hash": "3c1b7c010b07288d887b972733be49bb6589bcaf2f600c233d4a740a217745bd"
         }
     ],
     "hashType": "sha256"

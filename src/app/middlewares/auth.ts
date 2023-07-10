@@ -19,6 +19,12 @@ const auth =
       let verifiedUser = null;
       verifiedUser = jwtHelpers.verifyToken(token, config.jwt.secret as Secret);
       req.user = verifiedUser; //role, userID
+
+      // verify role
+      if (requiredRoles.length && !requiredRoles.includes(verifiedUser.role)) {
+        throw new ApiError(httpStatus.FORBIDDEN, 'Forbidden');
+      }
+
       next();
     } catch (error) {
       next(error);
