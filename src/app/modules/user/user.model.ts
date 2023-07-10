@@ -1,11 +1,10 @@
-import { IUserMethods } from './user.interface';
 /* eslint-disable @typescript-eslint/no-this-alias */
 import { Schema, model } from 'mongoose';
 import { IUser, UserModel } from './user.interface';
 import bcrypt from 'bcrypt';
 import config from '../../../config';
 
-const UserSchema = new Schema<IUser, UserModel, IUserMethods>(
+const UserSchema = new Schema<IUser, UserModel>(
   {
     id: {
       type: String,

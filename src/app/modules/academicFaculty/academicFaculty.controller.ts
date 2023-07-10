@@ -23,6 +23,9 @@ const createFaculty = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getAllFaculty = catchAsync(async (req: Request, res: Response) => {
+  console.log(req.headers.authorization, 'authorization');
+  console.log(req.user, 'user');
+
   const filters = pick(req.query, academicFacultyFilterableFields);
   const paginationOptions = pick(req.query, paginationFields);
   console.log(filters);
