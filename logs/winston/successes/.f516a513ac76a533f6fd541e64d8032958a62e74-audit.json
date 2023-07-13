@@ -6,71 +6,6 @@
     "auditLog": "E:\\auth-service-3\\logs\\winston\\successes\\.f516a513ac76a533f6fd541e64d8032958a62e74-audit.json",
     "files": [
         {
-            "date": 1687850686840,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-27-06-13-success.log",
-            "hash": "207c5545d0f12ebc9b4d6ac9cd9dbacdcd6c67a1e970d464d6f4212294d01feb"
-        },
-        {
-            "date": 1687890496174,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-00-success.log",
-            "hash": "cbc92a55925a9f8477f5f5ad013e08990cf8d01afe9a46cfc884f91d733de969"
-        },
-        {
-            "date": 1687892402728,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-01-success.log",
-            "hash": "56d5cd6c8265933f6eb441481cc1ef42a3bfa243c9472a3e9a8bd1d9da5bc85f"
-        },
-        {
-            "date": 1687896209596,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-02-success.log",
-            "hash": "4d2fe54a85069975c05895d7cbc4e8972e38884931ac4227b3451d717886a82b"
-        },
-        {
-            "date": 1687899709148,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-03-success.log",
-            "hash": "7e53414f40753b97b1e57400f1e4fc3e19cdc66168bc40080a5b9781ae8aaec6"
-        },
-        {
-            "date": 1687926489056,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-10-success.log",
-            "hash": "83b7a9bb5558c2b89b1a45aac64eaae7b5df1fa20df19c52ce7f14ba9199bac3"
-        },
-        {
-            "date": 1687931573267,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-11-success.log",
-            "hash": "55e9b3a5ece90a9740e12b03103d70651dfe37a0d136b6be0eddd4df36e7e15c"
-        },
-        {
-            "date": 1687932005086,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-12-success.log",
-            "hash": "de98e02377e5dbb21260b947d7f45de8935395b8944c47c8327a8d40f76a4872"
-        },
-        {
-            "date": 1687935647626,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-13-success.log",
-            "hash": "6ede93e6b6f88435d60a19e9abde4f03bedbaaf3a192accf916d87d8ec6cec8b"
-        },
-        {
-            "date": 1687970261201,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-22-success.log",
-            "hash": "d9dfe8faddcef93fb0e695f6122f04c5d3bc2653309e38d40e86295df6127462"
-        },
-        {
-            "date": 1687972701577,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-28-06-23-success.log",
-            "hash": "e13a98f58651576f55fab5704d6473239a55281832d430764785c424132e1ed1"
-        },
-        {
-            "date": 1687975206180,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-00-success.log",
-            "hash": "32bb8ffc991f4807e6c406bfd85c7e3304e314198a03f4dccd7f36939dd471df"
-        },
-        {
-            "date": 1687978975184,
-            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-01-success.log",
-            "hash": "ab0fbe52056954390295a58042c460de87fcc5709ee2c0448911d41145b40784"
-        },
-        {
             "date": 1688047521833,
             "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-29-06-20-success.log",
             "hash": "2e777b08a6027271c403d9aec385911765e6cb252c0119214ce7ed11709f250f"
@@ -304,6 +239,11 @@
             "date": 1688997620248,
             "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-10-07-20-success.log",
             "hash": "97269b043b2cd9dbab1260177226c8b53592209daf6275acf3df37153b281d24"
+        },
+        {
+            "date": 1689234086592,
+            "name": "E:\\auth-service-3\\logs\\winston\\successes\\uni3-2023-13-07-13-success.log",
+            "hash": "7d55d1b57168a4aeb29bbc9f5f2bc8bc1506e66f9c0076b2c3c248f2bdc783fd"
         }
     ],
     "hashType": "sha256"
