@@ -10,6 +10,7 @@ import {
 } from './academicSemester.constant';
 import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
+import { number } from 'zod';
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
@@ -24,7 +25,7 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
       enum: academicSemesterCode,
     },
     year: {
-      type: String,
+      type: Number,
       required: true,
     },
     startMonth: {
@@ -36,6 +37,10 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
       type: String,
       required: true,
       enum: academicSemesterMonths,
+    },
+    syncId: {
+      type: String,
+      required: true,
     },
   },
   {
