@@ -1,13 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-dgetAllFacultiesisable @typescript-eslint/no-explicit-any */
 import mongoose, { SortOrder } from 'mongoose';
-import { Faculty } from './faculty.model';
-import ApiError from '../../../errors/ApiError';
-import { User } from '../user/user.model';
-import { IFaculty, IFacultyFilters } from './faculty.interface';
-import httpStatus from 'http-status';
-import { facultySearchableFields } from './faculty.constant';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
-import { IPaginationOptions } from '../../../interfaces/pagination';
 import { IGenericResponse } from '../../../interfaces/common';
+import { IPaginationOptions } from '../../../interfaces/pagination';
+
+import httpStatus from 'http-status';
+import ApiError from '../../../errors/ApiError';
+import { RedisClient } from '../../../shared/redis';
+import { User } from '../user/user.model';
+import {
+  EVENT_FACULTY_UPDATED,
+  facultySearchableFields,
+} from './faculty.constant';
+import { IFaculty, IFacultyFilters } from './faculty.interface';
+import { Faculty } from './faculty.model';
 
 const getSingleFaculty = async (id: string): Promise<IFaculty | null> => {
   const result = await Faculty.findOne({ id })
@@ -97,7 +104,12 @@ const updateFaculty = async (
 
   const result = await Faculty.findOneAndUpdate({ id }, updatedFacultyData, {
     new: true,
-  });
+  })
+    .populate('academicFaculty')
+    .populate('academicDepartment');
+  if (result) {
+    await RedisClient.publish(EVENT_FACULTY_UPDATED, JSON.stringify(result));
+  }
   return result;
 };
 

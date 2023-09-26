@@ -1,6 +1,5 @@
-import { createClient } from 'redis';
+import { SetOptions, createClient } from 'redis';
 import config from '../config';
-import { SetOptions } from 'redis';
 
 const redisClient = createClient({
   url: config.redis.url,
@@ -9,12 +8,14 @@ const redisClient = createClient({
 const redisPubClient = createClient({
   url: config.redis.url,
 });
+
 const redisSubClient = createClient({
   url: config.redis.url,
 });
 
 redisClient.on('error', error => console.log('RedisError', error));
-redisClient.on('connect', err => console.log('RedisConnected'));
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
+redisClient.on('connect', error => console.log('Redis Connected'));
 
 const connect = async (): Promise<void> => {
   await redisClient.connect();
@@ -33,6 +34,7 @@ const set = async (
 const get = async (key: string): Promise<string | null> => {
   return await redisClient.get(key);
 };
+
 const del = async (key: string): Promise<void> => {
   await redisClient.del(key);
 };
@@ -47,7 +49,7 @@ const getAccessToken = async (userId: string): Promise<string | null> => {
   return await redisClient.get(key);
 };
 
-const deleteAccessToken = async (userId: string): Promise<void> => {
+const delAccessToken = async (userId: string): Promise<void> => {
   const key = `access-token:${userId}`;
   await redisClient.del(key);
 };
@@ -65,7 +67,7 @@ export const RedisClient = {
   del,
   setAccessToken,
   getAccessToken,
-  deleteAccessToken,
+  delAccessToken,
   disconnect,
   publish: redisPubClient.publish.bind(redisPubClient),
   subscribe: redisSubClient.subscribe.bind(redisSubClient),

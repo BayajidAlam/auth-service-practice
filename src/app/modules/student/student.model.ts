@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
-import { IStudent, StudentModel } from './student.interface';
 import { bloodGroup, gender } from './student.constant';
+import { IStudent, StudentModel } from './student.interface';
 
 export const StudentSchema = new Schema<IStudent, StudentModel>(
   {
@@ -130,7 +130,6 @@ export const StudentSchema = new Schema<IStudent, StudentModel>(
     },
     profileImage: {
       type: String,
-      // required: true,
     },
   },
   {

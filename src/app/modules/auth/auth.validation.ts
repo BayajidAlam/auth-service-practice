@@ -3,10 +3,10 @@ import { z } from 'zod';
 const loginZodSchema = z.object({
   body: z.object({
     id: z.string({
-      required_error: 'id is required',
+      required_error: 'ID is required',
     }),
     password: z.string({
-      required_error: 'password is required',
+      required_error: 'Password is required',
     }),
   }),
 });
@@ -14,7 +14,7 @@ const loginZodSchema = z.object({
 const refreshTokenZodSchema = z.object({
   cookies: z.object({
     refreshToken: z.string({
-      required_error: 'refresh token is required',
+      required_error: 'Refresh Token is required',
     }),
   }),
 });
@@ -22,10 +22,10 @@ const refreshTokenZodSchema = z.object({
 const changePasswordZodSchema = z.object({
   body: z.object({
     oldPassword: z.string({
-      required_error: 'Old password is required',
+      required_error: 'Old password  is required',
     }),
     newPassword: z.string({
-      required_error: 'New password is required',
+      required_error: 'New password  is required',
     }),
   }),
 });

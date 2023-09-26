@@ -1,60 +1,65 @@
-import { User } from './user.model';
+import httpStatus from 'http-status';
+import mongoose from 'mongoose';
+import config from '../../../config/index';
+import ApiError from '../../../errors/ApiError';
+import { RedisClient } from '../../../shared/redis';
+import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
+import { AcademicSemester } from '../academicSemester/academicSemester.model';
+import { IAdmin } from '../admin/admin.interface';
+import { Admin } from '../admin/admin.model';
+import { IFaculty } from '../faculty/faculty.interface';
+import { Faculty } from '../faculty/faculty.model';
+import { IStudent } from '../student/student.interface';
+import { Student } from '../student/student.model';
+import { EVENT_FACULTY_CREATED, EVENT_STUDENT_CREATED } from './user.constant';
 import { IUser } from './user.interface';
-import config from '../../../config';
+import { User } from './user.model';
 import {
   generateAdminId,
   generateFacultyId,
   generateStudentId,
 } from './user.utils';
-import ApiError from '../../../errors/ApiError';
-import { IStudent } from '../student/student.interface';
-import { AcademicSemester } from '../academicSemester/academicSemester.model';
-import mongoose from 'mongoose';
-import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
-import { Student } from '../student/student.model';
-import httpStatus from 'http-status';
-import { IFaculty } from '../faculty/faculty.interface';
-import { Faculty } from '../faculty/faculty.model';
-import { IAdmin } from '../admin/admin.interface';
-import { Admin } from '../admin/admin.model';
 
 const createStudent = async (
   student: IStudent,
   user: IUser
 ): Promise<IUser | null> => {
-  // default password
+  // If password is not given,set default password
   if (!user.password) {
     user.password = config.default_student_pass as string;
   }
-
   // set role
   user.role = 'student';
 
-  const academicSemester = await AcademicSemester.findById(
+  const academicsemester = await AcademicSemester.findById(
     student.academicSemester
   ).lean();
 
-  // transaction and rollback
   let newUserAllData = null;
   const session = await mongoose.startSession();
   try {
     session.startTransaction();
-    const id = await generateStudentId(academicSemester as IAcademicSemester);
+    // generate student id
+    const id = await generateStudentId(academicsemester as IAcademicSemester);
+    // set custom id into both  student & user
     user.id = id;
     student.id = id;
 
+    // Create student using sesssin
     const newStudent = await Student.create([student], { session });
 
     if (!newStudent.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create student');
     }
 
+    // set student _id (reference) into user.student
     user.student = newStudent[0]._id;
+
     const newUser = await User.create([user], { session });
+
     if (!newUser.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create user');
     }
-
     newUserAllData = newUser[0];
 
     await session.commitTransaction();
@@ -80,6 +85,13 @@ const createStudent = async (
         },
       ],
     });
+  }
+
+  if (newUserAllData) {
+    await RedisClient.publish(
+      EVENT_STUDENT_CREATED,
+      JSON.stringify(newUserAllData.student)
+    );
   }
 
   return newUserAllData;
@@ -142,6 +154,13 @@ const createFaculty = async (
         },
       ],
     });
+  }
+
+  if (newUserAllData) {
+    await RedisClient.publish(
+      EVENT_FACULTY_CREATED,
+      JSON.stringify(newUserAllData.faculty)
+    );
   }
 
   return newUserAllData;

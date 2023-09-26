@@ -1,10 +1,22 @@
 import {
   IAcademicSemesterCodes,
-  IAcademicSemesterMonth,
+  IAcademicSemesterMonths,
   IAcademicSemesterTitles,
 } from './academicSemester.interface';
 
-export const academicSemesterMonths: IAcademicSemesterMonth[] = [
+export const academicSemesterTitles: IAcademicSemesterTitles[] = [
+  'Autumn',
+  'Summer',
+  'Fall',
+];
+
+export const academicSemesterCodes: IAcademicSemesterCodes[] = [
+  '01',
+  '02',
+  '03',
+];
+
+export const acdemicSemesterMonths: IAcademicSemesterMonths[] = [
   'January',
   'February',
   'March',
@@ -19,20 +31,7 @@ export const academicSemesterMonths: IAcademicSemesterMonth[] = [
   'December',
 ];
 
-export const academicSemesterTitles: IAcademicSemesterTitles[] = [
-  'Autumn',
-  'Summer',
-  'Fall',
-];
-
-export const academicSemesterCode: IAcademicSemesterCodes[] = [
-  '01',
-  '02',
-  '03',
-];
-
-// create a mapper for semester code validation
-export const academicSemesterCodeMapper: {
+export const academicSemesterTitleCodeMapper: {
   [key: string]: string;
 } = {
   Autumn: '01',
@@ -40,13 +39,14 @@ export const academicSemesterCodeMapper: {
   Fall: '03',
 };
 
-export const academicSemesterSearchableField = ['title', 'code', 'year'];
+export const academicSemesterSearchableFields = ['title', 'code', 'year'];
 
 export const academicSemesterFilterableFields = [
   'searchTerm',
   'title',
   'code',
   'year',
+  'syncId',
 ];
 
 export const EVENT_ACADEMIC_SEMESTER_CREATED = 'academic-semester.created';

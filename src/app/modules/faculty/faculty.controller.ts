@@ -1,16 +1,15 @@
-import httpStatus from 'http-status';
-import sendResponse from '../../../shared/sendResponse';
-import { IFaculty } from './faculty.interface';
-import catchAsync from '../../../shared/catchAsync';
 import { Request, Response } from 'express';
-import { FacultyService } from './faculty.service';
-import { facultyFilterableFields } from './faculty.constant';
-import pick from '../../../shared/pick';
+import httpStatus from 'http-status';
 import { paginationFields } from '../../../constants/pagination';
+import catchAsync from '../../../shared/catchAsync';
+import pick from '../../../shared/pick';
+import sendResponse from '../../../shared/sendResponse';
+import { facultyFilterableFields } from './faculty.constant';
+import { IFaculty } from './faculty.interface';
+import { FacultyService } from './faculty.service';
 
 const getSingleFaculty = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
-  console.log(id);
   const result = await FacultyService.getSingleFaculty(id);
 
   sendResponse<IFaculty>(res, {

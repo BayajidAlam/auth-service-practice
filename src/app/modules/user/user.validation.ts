@@ -9,23 +9,16 @@ const createStudentZodSchema = z.object({
         firstName: z.string({
           required_error: 'First name is required',
         }),
-        middleName: z
-          .string({
-            required_error: 'Middle name is required',
-          })
-          .optional(),
+        middleName: z.string().optional(),
         lastName: z.string({
           required_error: 'Last name is required',
         }),
       }),
-      dateOfBirth: z.string({
-        required_error: 'Date of birth is required',
-      }),
       gender: z.enum([...gender] as [string, ...string[]], {
         required_error: 'Gender is required',
       }),
-      bloodGroup: z.enum([...bloodGroup] as [string, ...string[]], {
-        required_error: 'Blood group is required',
+      dateOfBirth: z.string({
+        required_error: 'Date of birth is required',
       }),
       email: z
         .string({
@@ -38,6 +31,7 @@ const createStudentZodSchema = z.object({
       emergencyContactNo: z.string({
         required_error: 'Emergency contact number is required',
       }),
+      bloodGroup: z.enum([...bloodGroup] as [string, ...string[]]).optional(),
       presentAddress: z.string({
         required_error: 'Present address is required',
       }),
@@ -207,7 +201,6 @@ const createAdminZodSchema = z.object({
       designation: z.string({
         required_error: 'Designation is required',
       }),
-
       profileImage: z.string().optional(),
     }),
   }),

@@ -6,7 +6,7 @@ import { managementDepartmentSearchableFields } from './managementDepartment.con
 import {
   IManagementDepartment,
   IManagementDepartmentFilters,
-} from './managementDepartment.interface';
+} from './managementDepartment.inerface';
 import { ManagementDepartment } from './managementDepartment.model';
 
 const createDepartment = async (
@@ -95,6 +95,7 @@ const updateDepartment = async (
 const deleteDepartment = async (
   id: string
 ): Promise<IManagementDepartment | null> => {
+  console.log(id);
   const result = await ManagementDepartment.findByIdAndDelete(id);
   return result;
 };

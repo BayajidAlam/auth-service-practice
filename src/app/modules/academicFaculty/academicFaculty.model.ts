@@ -2,9 +2,9 @@ import { Schema, model } from 'mongoose';
 import {
   AcademicFacultyModel,
   IAcademicFaculty,
-} from './academicFaculty.interface';
+} from './academicFaculty.interfaces';
 
-const academicFacultySchema = new Schema<
+const AcademicFacultySchema = new Schema<
   IAcademicFaculty,
   AcademicFacultyModel
 >(
@@ -12,6 +12,11 @@ const academicFacultySchema = new Schema<
     title: {
       type: String,
       required: true,
+      unique: true,
+    },
+    syncId: {
+      type: String,
+      required: false,
       unique: true,
     },
   },
@@ -25,5 +30,5 @@ const academicFacultySchema = new Schema<
 
 export const AcademicFaculty = model<IAcademicFaculty, AcademicFacultyModel>(
   'AcademicFaculty',
-  academicFacultySchema
+  AcademicFacultySchema
 );

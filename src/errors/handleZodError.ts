@@ -1,6 +1,6 @@
 import { ZodError, ZodIssue } from 'zod';
-import { IGenericErrorMessage } from '../interfaces/error';
 import { IGenericErrorResponse } from '../interfaces/common';
+import { IGenericErrorMessage } from '../interfaces/error';
 
 const handleZodError = (error: ZodError): IGenericErrorResponse => {
   const errors: IGenericErrorMessage[] = error.issues.map((issue: ZodIssue) => {
@@ -9,14 +9,13 @@ const handleZodError = (error: ZodError): IGenericErrorResponse => {
       message: issue?.message,
     };
   });
-  console.log(errors, 'This is errors log');
 
   const statusCode = 400;
 
   return {
     statusCode,
     message: 'Validation Error',
-    errorMessage: errors,
+    errorMessages: errors,
   };
 };
 

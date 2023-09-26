@@ -1,25 +1,22 @@
-import { createLogger, format, transports } from 'winston';
-const { combine, timestamp, label, printf, prettyPrint } = format;
+/* eslint-disable no-undef */
 import path from 'path';
+import { createLogger, format, transports } from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
+const { combine, timestamp, label, printf } = format;
 
-// custom log format
+//Customm Log Format
+
 const myFormat = printf(({ level, message, label, timestamp }) => {
   const date = new Date(timestamp);
   const hour = date.getHours();
-  const minute = date.getMinutes();
-  const second = date.getSeconds();
-  return `${date.toDateString()} ${hour}:${minute}:${second} [${label}] ${level}: ${message}`;
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+  return `${date.toDateString()} ${hour}:${minutes}:${seconds} } [${label}] ${level}: ${message}`;
 });
 
 const logger = createLogger({
   level: 'info',
-  format: combine(
-    label({ label: 'Uni3.0' }),
-    timestamp(),
-    myFormat,
-    prettyPrint()
-  ),
+  format: combine(label({ label: 'PH' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
@@ -28,7 +25,7 @@ const logger = createLogger({
         'logs',
         'winston',
         'successes',
-        'uni3-%DATE%-success.log'
+        'phu-%DATE%-success.log'
       ),
       datePattern: 'YYYY-DD-MM-HH',
       zippedArchive: true,
@@ -38,14 +35,9 @@ const logger = createLogger({
   ],
 });
 
-const errorLogger = createLogger({
+const errorlogger = createLogger({
   level: 'error',
-  format: combine(
-    label({ label: 'Uni3.0' }),
-    timestamp(),
-    myFormat,
-    prettyPrint()
-  ),
+  format: combine(label({ label: 'PH' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
@@ -54,7 +46,7 @@ const errorLogger = createLogger({
         'logs',
         'winston',
         'errors',
-        'uni3-%DATE%-error.log'
+        'phu-%DATE%-error.log'
       ),
       datePattern: 'YYYY-DD-MM-HH',
       zippedArchive: true,
@@ -64,4 +56,4 @@ const errorLogger = createLogger({
   ],
 });
 
-export { logger, errorLogger };
+export { logger, errorlogger };

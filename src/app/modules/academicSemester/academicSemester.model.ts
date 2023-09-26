@@ -1,16 +1,12 @@
-import { Schema, model } from 'mongoose';
-import {
-  AcademicSemesterModel,
-  IAcademicSemester,
-} from './academicSemester.interface';
-import {
-  academicSemesterCode,
-  academicSemesterMonths,
-  academicSemesterTitles,
-} from './academicSemester.constant';
-import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
-import { number } from 'zod';
+import { Schema, model } from 'mongoose';
+import ApiError from '../../../errors/ApiError';
+import {
+  academicSemesterCodes,
+  academicSemesterTitles,
+  acdemicSemesterMonths,
+} from './academicSemester.constant';
+import { IAcademicSemester } from './academicSemester.interface';
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
@@ -19,24 +15,24 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
       required: true,
       enum: academicSemesterTitles,
     },
-    code: {
-      type: String,
-      required: true,
-      enum: academicSemesterCode,
-    },
     year: {
       type: Number,
       required: true,
     },
+    code: {
+      type: String,
+      required: true,
+      enum: academicSemesterCodes,
+    },
     startMonth: {
       type: String,
       required: true,
-      enum: academicSemesterMonths,
+      enum: acdemicSemesterMonths,
     },
     endMonth: {
       type: String,
       required: true,
-      enum: academicSemesterMonths,
+      enum: acdemicSemesterMonths,
     },
     syncId: {
       type: String,
@@ -56,17 +52,17 @@ academicSemesterSchema.pre('save', async function (next) {
     title: this.title,
     year: this.year,
   });
-
+  console.log(isExist);
   if (isExist) {
     throw new ApiError(
       httpStatus.CONFLICT,
-      'Academic Semester is already exist !'
+      'Academic semester is already exist !'
     );
   }
   next();
 });
 
-export const AcademicSemester = model<IAcademicSemester, AcademicSemesterModel>(
+export const AcademicSemester = model<IAcademicSemester>(
   'AcademicSemester',
   academicSemesterSchema
 );
